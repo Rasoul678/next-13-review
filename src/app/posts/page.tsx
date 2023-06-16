@@ -2,6 +2,10 @@ import React from "react";
 
 interface IProps {}
 
+export const metadata = {
+  title: "Posts",
+};
+
 const Page: React.FC<IProps> = async (props) => {
   //! Next default behaviour is Static Site Generation(SSG)
   const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
